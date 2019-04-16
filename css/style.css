@@ -1,0 +1,60 @@
+.btn {
+	position: relative;
+	padding: 15px 30px;
+	margin: 0 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	font-weight: 600;
+	background: #c81965;
+	border-width: 0;	
+	outline: none;
+	cursor: pointer;
+}
+.btn:before,
+.btn:after{
+	content: "";
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background: #c81965;
+	transition: .3s cubic-bezier(.75,.24,.01,.9);
+}
+.btn:before { 
+	top: 0;
+	right: -5px; 
+}
+.btn:after { 
+	bottom: 0;
+	left: -5px;  
+}
+.btn:hover:before {
+	transform: translateX(-5px);
+}
+.btn:hover:after {
+	transform: translateX(5px);
+}
+.btn2,
+.btn2:before,
+.btn2:after {
+	background: #1f0b2f;
+}
+.text {
+	position: relative;
+	z-index: 2;
+}
+.example-shadow-2 {
+  text-align: left;
+}
+.example-shadow-2 a  {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 22px;
+  margin: 20px;
+  color: grey;
+  background:#FFFF00;
+  box-shadow: 0 5px 0 #000000;
+}
+.example-shadow-2 a:hover {
+  background: #800000;
+  
