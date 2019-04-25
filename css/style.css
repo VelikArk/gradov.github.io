@@ -1,60 +1,127 @@
-.btn {
-	position: relative;
-	padding: 15px 30px;
-	margin: 0 20px;
-	font-family: 'Montserrat Alternates', sans-serif;
-	color: white;
-	font-weight: 600;
-	background: #c81965;
-	border-width: 0;	
-	outline: none;
-	cursor: pointer;
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+html,body{
+	margin:0px;
 }
-.btn:before,
-.btn:after{
-	content: "";
-	position: absolute;
-	height: 50%;
+h1{
+    background: #FFFF00;
+    font-size: 4em;
+    color:#FFFF00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-family: Alfa Slab One;
+   	
+   }
+   h2{
+    color:grey;
+   }
+header{
+	float: left;
+	margin-top: 2%;
 	width: 100%;
-	background: #c81965;
-	transition: .3s cubic-bezier(.75,.24,.01,.9);
+	height: 100px;
+	background-color: yellow;
 }
-.btn:before { 
-	top: 0;
-	right: -5px; 
+#logotxt{
+	float: left;
+	font-family: Alfa Slab One;
+	font-size: 4em;
+	color: yellow;
+	background-color: black;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	}
+#butt{
+	float: right;
+	margin-right: 5%;
+	width: 100px;
+	transition:  all.3s ease;
 }
-.btn:after { 
-	bottom: 0;
-	left: -5px;  
+#butt:hover{
+	margin-right: 8%;
+	background-color: black;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 20px solid white;
+	border-right: 20px solid white;
 }
-.btn:hover:before {
-	transform: translateX(-5px);
+main{
 }
-.btn:hover:after {
-	transform: translateX(5px);
+#mtxt{
+	float: left;
+	margin-top: 2%;
+	background-color: #FEFF0043;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 2em;
+	font-family: Oswald;
+	text-shadow: 1px 1px 0px white;
+	padding: 20px;
+	border-radius: 70px;
+	transition: all.6s ease;
 }
-.btn2,
-.btn2:before,
-.btn2:after {
-	background: #1f0b2f;
+#mtxt:hover{
+	font-size: 2.5em;
+	background-color: #FFFF00E7;
+	box-shadow: 0px 0px 260px yellow;
+	margin-left: 15%;
+	margin-right: 15%;
+
 }
-.text {
-	position: relative;
-	z-index: 2;
+#mtxt2{
+	float: left;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: yellow;
+	font-size: 3em;
+	font-family: Oswald;
+	text-shadow: 1px 1px 0px white;
+	box-shadow: 0px 0px 50px yellow;
+	padding: 20px;
+	border-radius: 50px;
 }
-.example-shadow-2 {
-  text-align: left;
+#mtxt3{
+	float: left;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: yellow;
+	font-size: 2em;
+	font-family: Oswald;
+	text-shadow: 1px 1px 0px white;
+	box-shadow: 0px 0px 50px yellow;
+	padding: 20px;
+	border-radius: 50px;
 }
-.example-shadow-2 a  {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 15px 35px;
-  font-size: 22px;
-  margin: 20px;
-  color: grey;
-  background:#FFFF00;
-  box-shadow: 0 5px 0 #000000;
+#NAVI{
+	color: yellow;
+	font-size: 2em;
+	text-shadow: 2px 2px 1px black;
+	font-family: Alfa Slab One;
 }
-.example-shadow-2 a:hover {
-  background: #800000;
-  
+#NAVI:hover{
+	color: black;
+	text-shadow: 2px 2px 1px white;
+
+}
+/* БЛОКИ ИГРОКОВ */
+
+#box1,#box2,#box3,#box4,#box5 {
+	float: left;
+	color: white;
+	font-size: 2em;
+	font-family: Oswald;
+	text-shadow: 2px 2px 0px black;
+	border-top: 15px solid yellow;
+}
+#box5{
+	border-bottom: 15px solid yellow;
+}
+#box1{
+	margin-top: 5%;
+}
